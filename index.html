@@ -3,11 +3,15 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Giphy Stuff</title>
+  <title>The Funny Sports Gif Page</title>
   <link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
 
 <body>
+<div>
+  <h1>The Funny Sports Gif Page</h1>
+</div>
+
 <div class="container" "="">
   <div id="sportssbuttons">
 <!-- Buttons -->
@@ -37,7 +41,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" data-state="still"></script>
   <script type="text/javascript">
-// var sports = ["Soccer", "Hockey", "Football", "Ping Pong"];
+
 
 $(document).ready(function(){
 
@@ -112,7 +116,7 @@ $(document).ready(function(){
         // handles the event when clicked
         $('#theButton').on('click', function(){
             var sportButton = $("#gif-input").val();
-            //adds the new animal
+            //adds the new sport
 
             var newButton = $("<button/>").addClass( "sport-button").attr('data-name',sportButton).html(sportButton).css({'margin': '5px'});
             
